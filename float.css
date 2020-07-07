@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  max-width: 1140px;
+
+  margin: 0 auto;
+}
+.thumb {
+  width: 40%;
+  float: left;
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+}
+.text {
+  width: 40%;
+  float: left;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.logo {
+  float: left;
+}
+
+.nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.navigation {
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a:link {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.nav ul li a:hover {
+  border-bottom: 2px solid blue;
+}
+.center-item {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+}
+
+.card-container {
+  width: 35%;
+  margin: 40px;
+  box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.3);
+  transition: ease-out 0.2s;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-container:hover {
+  transform: translateY(-6px);
+}
+.btn:link {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background-color: royalblue;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+.card-content img {
+  width: 100%;
+}
+
+.card-content p {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+  .text {
+    width: 100%;
+    float: left;
+    text-align: justify;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .thumb {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .center-item {
+    position: absolute;
+    left: 25%;
+  }
+
+  .card-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
